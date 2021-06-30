@@ -1,0 +1,110 @@
+2021/06/21 22:55:10 [alert] 13916#17244: OpenEvent("ngx_master_21636") failed (2: The system cannot find the file specified)
+2021/06/24 16:28:29 [alert] 1872#5060: OpenEvent("ngx_master_10876") failed (2: The system cannot find the file specified)
+2021/06/25 01:26:32 [error] 20188#21936: *6145 FastCGI sent in stderr: "PHP Parse error:  syntax error, unexpected '{', expecting '(' in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twntytwentyone-child\functions.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /wp-admin/themes.php?activated=true HTTP/1.0", upstream: "fastcgi://127.0.0.1:10013", host: "dndsite.local", referrer: "http://dndsite.local/wp-admin/themes.php"
+2021/06/25 01:27:15 [error] 20188#21936: *6147 FastCGI sent in stderr: "PHP Parse error:  syntax error, unexpected '{', expecting '(' in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twntytwentyone-child\functions.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-admin/admin-ajax.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10012", host: "dndsite.local", referrer: "http://dndsite.local/wp-admin/customize.php?url=http%3A%2F%2Fdndsite.local%2Fbefore-a-session%2F2021%2F06%2F24%2F&theme=twentytwentyone&return=http%3A%2F%2Fdndsite.local%2Fbefore-a-session%2F2021%2F06%2F24%2F"
+2021/06/25 01:27:18 [error] 20188#21936: *6149 FastCGI sent in stderr: "PHP Parse error:  syntax error, unexpected '{', expecting '(' in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twntytwentyone-child\functions.php on line 8" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-admin/admin-ajax.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10013", host: "dndsite.local", referrer: "http://dndsite.local/wp-admin/post.php?post=59&action=edit"
+2021/06/25 01:27:52 [error] 20188#21936: *6219 FastCGI sent in stderr: "PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'tt_add_styles' not found or invalid function name in C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php on line 292
+PHP Stack trace:
+PHP   1. {main}() C:\Users\mika4\Local Sites\dndsite\app\public\index.php:0
+PHP   2. require() C:\Users\mika4\Local Sites\dndsite\app\public\index.php:17
+PHP   3. require_once() C:\Users\mika4\Local Sites\dndsite\app\public\wp-blog-header.php:19
+PHP   4. include() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\template-loader.php:106
+PHP   5. get_header() C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twentytwentyone\404.php:12
+PHP   6. locate_template() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\general-template.php:48
+PHP   7. load_template() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\template.php:676
+PHP   8. require_once() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\template.php:730
+PHP   9. wp_head() C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twentytwentyone\header.php:20
+PHP  10. do_action() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\general-template.php:3009
+PHP  11. WP_Hook->do_action() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\plugin.php:484
+PHP  12. WP_Hook->apply_filters() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php:316
+PHP  13. wp_enqueue_scripts() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php:292
+PHP  14. do_action() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\script-loader.php:2027
+PHP  15. WP_Hook->do_action() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\plugin.php:484
+PHP  16. WP_Hook->apply_filters() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php:316" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /wp-
+2021/06/25 01:27:57 [error] 20188#21936: *6321 FastCGI sent in stderr: "PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'tt_add_styles' not found or invalid function name in C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php on line 292
+PHP Stack trace:
+PHP   1. {main}() C:\Users\mika4\Local Sites\dndsite\app\public\index.php:0
+PHP   2. require() C:\Users\mika4\Local Sites\dndsite\app\public\index.php:17
+PHP   3. require_once() C:\Users\mika4\Local Sites\dndsite\app\public\wp-blog-header.php:19
+PHP   4. include() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\template-loader.php:106
+PHP   5. get_header() C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twentytwentyone\page.php:12
+PHP   6. locate_template() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\general-template.php:48
+PHP   7. load_template() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\template.php:676
+PHP   8. require_once() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\template.php:730
+PHP   9. wp_head() C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twentytwentyone\header.php:20
+PHP  10. do_action() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\general-template.php:3009
+PHP  11. WP_Hook->do_action() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\plugin.php:484
+PHP  12. WP_Hook->apply_filters() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php:316
+PHP  13. wp_enqueue_scripts() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php:292
+PHP  14. do_action() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\script-loader.php:2027
+PHP  15. WP_Hook->do_action() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\plugin.php:484
+PHP  16. WP_Hook->apply_filters() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php:316" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /?c
+2021/06/25 01:28:35 [error] 20188#21936: *6458 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function wp_enqueu_style() in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twntytwentyone-child\functions.php:7
+Stack trace:
+#0 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(292): tt_add_styles('')
+#1 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\script-loader.php(2027): do_action('wp_enqueue_scri...')
+#4 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(292): wp_enqueue_scripts('')
+#5 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#7 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\genera in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twntytwentyone-child\functions.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /?customize_changeset_uuid=615e7dfa-9525-45fb-8d36-2e45f24fd8e5&customize_theme=twntytwentyone-child&customize_messenger_channel=preview-0 HTTP/1.0", upstream: "fastcgi://127.0.0.1:10013", host: "dndsite.local", referrer: "http://dndsite.local/wp-admin/customize.php?theme=twntytwentyone-child&return=http%3A%2F%2Fdndsite.local%2Fwp-admin%2Fthemes.php%3Ftheme%3Dtwntytwentyone-child"
+2021/06/25 01:28:42 [error] 20188#21936: *6462 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function wp_enqueu_style() in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twntytwentyone-child\functions.php:7
+Stack trace:
+#0 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(292): tt_add_styles('')
+#1 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\script-loader.php(2027): do_action('wp_enqueue_scri...')
+#4 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(292): wp_enqueue_scripts('')
+#5 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#7 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\genera in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twntytwentyone-child\functions.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /wp-admin/undefined HTTP/1.0", upstream: "fastcgi://127.0.0.1:10013", host: "dndsite.local", referrer: "http://dndsite.local/wp-admin/themes.php?theme=twntytwentyone-child"
+2021/06/25 01:28:45 [error] 20188#21936: *6560 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function wp_enqueu_style() in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twntytwentyone-child\functions.php:7
+Stack trace:
+#0 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(292): tt_add_styles('')
+#1 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\script-loader.php(2027): do_action('wp_enqueue_scri...')
+#4 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(292): wp_enqueue_scripts('')
+#5 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#7 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\genera in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twntytwentyone-child\functions.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /?customize_changeset_uuid=35da4851-5ec9-490e-9c23-c777ffa32189&customize_theme=twntytwentyone-child&customize_messenger_channel=preview-0 HTTP/1.0", upstream: "fastcgi://127.0.0.1:10013", host: "dndsite.local", referrer: "http://dndsite.local/wp-admin/customize.php?theme=twntytwentyone-child&return=http%3A%2F%2Fdndsite.local%2Fwp-admin%2Fthemes.php%3Ftheme%3Dtwntytwentyone-child"
+2021/06/25 01:29:09 [error] 20188#21936: *6659 FastCGI sent in stderr: "PHP Warning:  Use of undefined constant get_template_directory - assumed 'get_template_directory' (this will throw an Error in a future version of PHP) in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twntytwentyone-child\functions.php on line 7
+PHP Stack trace:
+PHP   1. {main}() C:\Users\mika4\Local Sites\dndsite\app\public\index.php:0
+PHP   2. require() C:\Users\mika4\Local Sites\dndsite\app\public\index.php:17
+PHP   3. require_once() C:\Users\mika4\Local Sites\dndsite\app\public\wp-blog-header.php:19
+PHP   4. include() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\template-loader.php:106
+PHP   5. get_header() C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twentytwentyone\page.php:12
+PHP   6. locate_template() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\general-template.php:48
+PHP   7. load_template() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\template.php:676
+PHP   8. require_once() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\template.php:730
+PHP   9. wp_head() C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twentytwentyone\header.php:20
+PHP  10. do_action() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\general-template.php:3009
+PHP  11. WP_Hook->do_action() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\plugin.php:484
+PHP  12. WP_Hook->apply_filters() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php:316
+PHP  13. wp_enqueue_scripts() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php:292
+PHP  14. do_action() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\script-loader.php:2027
+PHP  15. WP_Hook->do_action() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\plugin.php:484
+PHP  16. WP_Hook->apply_filters() C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php:316
+PHP  17. tt_add_styles() C:\Users\mika4\Local Sites\dndsite\
+2021/06/25 01:29:09 [error] 20188#21936: *6659 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function uri() in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twntytwentyone-child\functions.php:7
+Stack trace:
+#0 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(292): tt_add_styles('')
+#1 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\script-loader.php(2027): do_action('wp_enqueue_scri...')
+#4 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(292): wp_enqueue_scripts('')
+#5 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#7 C:\Users\mika4\Local Sites\dndsite\app\public\wp-includes\general-template.p in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twntytwentyone-child\functions.php on line 7" while reading upstream, client: 127.0.0.1, server: , request: "GET /?customize_changeset_uuid=4a7d69de-1e69-4bd4-b55a-b747a540f5a6&customize_theme=twntytwentyone-child&customize_messenger_channel=preview-0 HTTP/1.0", upstream: "fastcgi://127.0.0.1:10013", host: "dndsite.local", referrer: "http://dndsite.local/wp-admin/customize.php?theme=twntytwentyone-child&return=http%3A%2F%2Fdndsite.local%2Fwp-admin%2Fthemes.php%3Ftheme%3Dtwntytwentyone-child"
+2021/06/25 01:30:09 [error] 20188#21936: *6778 directory index of "C:/Users/mika4/Local Sites/dndsite/app/public/wp-content/themes/twntytwentyone-child/" is forbidden, client: 127.0.0.1, server: , request: "GET /wp-content/themes/twntytwentyone-child/?ver%5B0%5D=parent-style HTTP/1.1", host: "dndsite.local:10014", referrer: "http://dndsite.local/"
+2021/06/25 01:30:09 [error] 20188#21936: *6776 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twentytwentyone\index.php:17
+Stack trace:
+#0 {main}
+  thrown in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twentytwentyone\index.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /wp-content/themes/twentytwentyone/?ver=5.7.2 HTTP/1.1", upstream: "fastcgi://127.0.0.1:10012", host: "dndsite.local:10014", referrer: "http://dndsite.local/"
+2021/06/30 20:46:48 [error] 1436#26080: *21 directory index of "C:/Users/mika4/Local Sites/dndsite/app/public/wp-content/themes/twntytwentyone-child/" is forbidden, client: 127.0.0.1, server: , request: "GET /wp-content/themes/twntytwentyone-child/?ver%5B0%5D=parent-style HTTP/1.1", host: "dndsite.local:10014", referrer: "http://dndsite.local/"
+2021/06/30 20:47:06 [error] 1436#26080: *20 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twentytwentyone\index.php:17
+Stack trace:
+#0 {main}
+  thrown in C:\Users\mika4\Local Sites\dndsite\app\public\wp-content\themes\twentytwentyone\index.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /wp-content/themes/twentytwentyone/?ver=5.7.2 HTTP/1.1", upstream: "fastcgi://127.0.0.1:10012", host: "dndsite.local:10014", referrer: "http://dndsite.local/"
