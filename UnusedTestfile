@@ -1,0 +1,92 @@
+<?php
+
+add_action('wp_enqueue_scripts', 'tt_add_styles');
+
+function tt_add_styles()
+{
+    wp_enqueue_style('parent-style', get_template_directory_uri(), '/style.css');
+    wp_enqueue_style('child-style', get_stylesheet_directory_uri(), '/style.css', array('parent-style'));
+}
+
+
+
+// function that runs when shortcode is called
+function getCalendarAndMakeIt($atts) { 
+    $returnElement=NULL;
+
+    //get attributes. dates should be in form of pp-kk-vvvv !! remember that all numbers must be 2 ints even if the first will be zero so 8=> 08 for example
+    $a = shortcode_atts( array(
+		'startdate' => '',
+		'enddate' => '',
+        'location' => '',
+	), $atts );
+
+    //dataGetter($a);
+    return "<div>{$a['startdate']}</div>";
+    //return $returnElement;
+} 
+    // register shortcode
+    add_shortcode('laakari', 'getCalendarAndMakeIt'); 
+
+
+
+
+    function makeAdress($a){
+        $startURL='https://api.contio.fi/duodecim/api/v1/rss?';
+        //$dateStart='startDate='.$a['startdate'];
+        //$dateEnd='endDate='.$a['enddate'];
+        $dateStart='13-8-2021';
+        $dateEnd='12-12-2021';
+        $startURL .= $dateStart . '&' . $dateEnd;
+        return $startURL;
+    }
+
+
+    //reads the RSS feed from the website $dA=dataAttributes
+    function dataGetter($dA){
+        $addressUsed = $this->makeAdress($dA);
+        $dataXMLObject = simplexml_load_file($addressUsed);
+        
+        /*testing function 
+        //$fileName = 'RSS stream test ID: '.time().'.xml';
+        $fileName = 'THEFILEISDONE 2 electric bogaloo'.'.xml';
+        $dataXMLObject->formatOutput = true;  
+        $dataXMLObject->asXML($fileName); */
+
+
+        return $dataXMLObject;
+
+    }
+
+    
+    //parses data[might not be neccesary]
+    function dataParser(){
+
+    }
+
+    function makeElementsLowerLevel(){
+
+    }
+
+
+    function makeElementsLowMidLevel(){
+
+    }
+
+
+    function makeElementsHighMidLevel(){
+
+    }
+
+
+    function makeElementsTopLevel(){
+
+    }
+
+    //makes the displayelement from the data. WIll be designed later !!!! remeber to take into account that ther should be own element for the Items at the top level, Events at the high-mid level
+    // lectureseries at the low-mid level and lectures in the low level.
+    function makeElement($dataXML){
+
+    }
+
+?>
